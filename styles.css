@@ -1,0 +1,37 @@
+:root{
+  --bg:#eaeef3;
+  --bg-image: url("https://pbs.twimg.com/profile_images/2074677137999585280/FJkWCU-A_400x400.jpg");
+  --muted:#173779;
+  --accent:#c7c5f4;
+  --max:1000px;
+}
+*{box-sizing:border-box}
+body{font-family:Inter,system-ui,Segoe UI,Arial,sans-serif;margin:0;color:#0f172a;background:var(--bg);line-height:1.5}
+.site-header{padding: 1px;border-bottom:4px solid #18377a;}
+.container{max-width:var(--max);margin:0 auto;padding:1rem;background:linear-gradient(180deg,#669ed6,#f0aeae)}
+.header-inner{display:flex;align-items:center;justify-content:space-between}
+.brand{font-size:1.125rem;margin:0}
+.nav-toggle{display:none;background:none;border:0;font-size:1.25rem}
+.primary-nav ul{list-style:none;margin:0;padding:0;display:flex;gap:1rem}
+.primary-nav a{text-decoration:none;color:var(--muted)}
+.hero{padding: 1px;}
+.hero-inner{display:grid;grid-template-columns:160px 1fr;gap:1.25rem;align-items:center}
+.hero-image img{width:100%;border-radius:50%}
+.lead{color:var(--accent);font-weight:600; align-items:right}
+.section{padding:2rem 0;border-top:1px solid #f3f4f6}
+.skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:.75rem;padding:0;list-style:none}
+.contact-form label{display:block;margin-bottom:.75rem}
+input,textarea{width:100%;padding:.5rem;border:1px solid #e5e7eb;border-radius:6px;margin-top:.25rem}
+.btn{display:inline-block;padding:.5rem 1rem;background:var(--accent);color:#180342;border-radius:8px;text-decoration:none}
+.site-footer{padding:1rem 0;text-align:center;color:var(--muted);font-size:.9rem;border-top:1px solid #f3f4f6}
+.projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem}
+.project{background:#f8fafc;padding:1rem;border-radius:8px;border:1px solid #eef2ff}
+blockquote{background:#fff7ed;padding:1rem;border-left:4px solid #f59e0b}
+.social-link{display:inline-block;margin-right:.5rem;color:aaaaaa;font-size:1.5rem; 
+    transition:color .2s; hover{color: 333333px;}; margin:0 15px}
+
+@media (max-width:720px){
+  .nav-toggle{display:inline-block}
+  .primary-nav{display:none}
+  .hero-inner{grid-template-columns:1fr;text-align:center}
+}
